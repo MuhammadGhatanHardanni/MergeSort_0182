@@ -87,7 +87,7 @@ void mergeSort(int low, int high)
     {
         arr[x] = B[x];
     }
-
+}
     void output()
 {
     cout << "\nData setelah diurutkan (Merge Sort): ";
@@ -98,5 +98,9 @@ void mergeSort(int low, int high)
     cout << endl;
 }
 
-
+int main()
+{
+    input();
+    mergeSort(0, n - 1);
+    output();
 }
